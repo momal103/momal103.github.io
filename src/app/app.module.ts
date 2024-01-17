@@ -10,6 +10,7 @@ import { ProgrammeComponent } from './programme/programme.component';
 import { SuiviComponent } from './suivi/suivi.component';
 import { RisqueComponent } from './risque/risque.component';
 import { FooterComponent } from './footer/footer.component';
+import { RdvDemandeComponent } from './rdv-demande/rdv-demande.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     ProgrammeComponent,
     SuiviComponent,
     RisqueComponent,
-    FooterComponent
+    FooterComponent,
+    RdvDemandeComponent
   ],
   imports: [
     BrowserModule,
