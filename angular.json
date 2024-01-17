@@ -35,10 +35,11 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/javascript/scripts.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
