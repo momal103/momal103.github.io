@@ -11,6 +11,7 @@ import { SuiviComponent } from './suivi/suivi.component';
 import { RisqueComponent } from './risque/risque.component';
 import { FooterComponent } from './footer/footer.component';
 import { RdvDemandeComponent } from './rdv-demande/rdv-demande.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RdvDemandeComponent } from './rdv-demande/rdv-demande.component';
     SuiviComponent,
     RisqueComponent,
     FooterComponent,
-    RdvDemandeComponent
+    RdvDemandeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
