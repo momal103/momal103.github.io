@@ -1,0 +1,53 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img class="logo-image" src="../../assets/images/logo-ballon-gastrique-allurion-blanc.svg" alt="centre-obesite" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-label="Toggle navigation"
+              [attr.aria-expanded]="isExpanded"
+              (click)="toggle()">
+        MENU
+        <i class="fas fa-bars ms-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+          <li class="nav-item" [routerLinkActive]="['active-link']"
+              [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link" aria-current="page" [routerLink]="['/']" href="#">Accueil</a>
+          </li>
+          <li class="nav-item dropdown" [routerLinkActive]="['active-link']">
+            <a class="nav-link dropdown-toggle" [routerLink]="['/programme']" data-bs-toggle="dropdown">Programme Allurion</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" [routerLink]="['/programme']">Le ballon gastrique révolutionnaire</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/risque']">Risques & bénéfices</a></li>
+              <li><a class="dropdown-item" href="#">Rapport d'étude</a></li>
+              <li><a class="dropdown-item" href="#">Découvrez la combinaison efficace</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" [routerLinkActive]="['active-link']">
+            <a class="nav-link dropdown-toggle" [routerLink]="['/suivi']" data-bs-toggle="dropdown" href="#">Suivi &amp; accompagnement</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Suivi médical</a></li>
+              <li><a class="dropdown-item" href="#">Suivi diététique</a></li>
+              <li><a class="dropdown-item" href="#">Suivi psychologique</a></li>
+              <li><a class="dropdown-item" href="#">Suivi Morphologique</a></li>
+              <li><a class="dropdown-item" href="#">Suivi neurotraining</a></li>
+              <li><a class="dropdown-item" href="#">Suivi sportif</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active-link']">
+            <a class="nav-link" [routerLink]="['/tarif']" href="#">Tarif</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active-link']">
+            <button class="btn btn-outline-success d-flex">Prendre RDV</button>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  
+  
+  
