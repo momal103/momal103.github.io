@@ -12,6 +12,10 @@ import { RisqueComponent } from './risque/risque.component';
 import { FooterComponent } from './footer/footer.component';
 import { RdvDemandeComponent } from './rdv-demande/rdv-demande.component';
 import { HeaderComponent } from './header/header.component';
+import { SectionComponent } from './section/section.component';
+import { RubriqueComponent } from './rubrique/rubrique.component';
+import { SuiviCardComponent } from './suivi-card/suivi-card.component';
+import { AccordionItemComponent } from './accordion-item/accordion-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { HeaderComponent } from './header/header.component';
     RisqueComponent,
     FooterComponent,
     RdvDemandeComponent,
-    HeaderComponent
+    HeaderComponent,
+    SectionComponent,
+    RubriqueComponent,
+    SuiviCardComponent,
+    AccordionItemComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<div class="accordion-item">
+    <h2 class="accordion-header" id="{{'flush-heading' + num}}">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+      [attr.data-bs-target]="'#flush-collapse'+num" aria-expanded="false" [attr.aria-controls]="'flush-collapse'+num">
+        {{header}}
+      </button>
+    </h2>
+    <div id="{{'flush-collapse' + num}}" class="accordion-collapse collapse" [attr.aria-labelledby]="'flush-heading'+num"
+     data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>

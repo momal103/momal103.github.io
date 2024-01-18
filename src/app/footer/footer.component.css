@@ -1,0 +1,74 @@
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+footer {
+	padding: 140px 0 40px;
+	/*background: url('../img/footer.jpg');*/
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+footer .trial-button {
+	overflow: hidden !important;
+	margin: 40px 0;
+}
+
+footer .open-blink {
+	content: ' ';
+	position: relative;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 0 20px;
+	border-radius: 50%;
+	background-color: #4caf50;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+footer .open-blink:before {
+	content: ' ';
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	opacity: 0.1;
+	border-radius: 50%;
+	background-color: #4caf50;
+}
+
+footer .opening-hours {
+	margin-top: 60px;
+}
+
+footer .bottom-footer {
+	margin-top: 150px;
+}
+
+footer .social-footer {
+	padding: 0;
+	list-style: none;
+}
+
+footer .social-footer li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+footer .social-footer li a {
+	font-size: 24px;
+	color: #fff;
+}
+
+footer .social-footer li:hover a {
+	color: #00a8ff;
+}

@@ -1,0 +1,15 @@
+<div class="service">
+    <div class="icon-holder">
+      <img [src]="'../../assets/icons/'+imgName+'.svg'" alt="" class="icon">
+    </div>
+    <h4 class="heading">{{heading}}</h4>
+    <div class="description">
+      <p class="text-muted">
+        <ng-content></ng-content>
+      </p>
+      <a class="btn btn-link">
+        En savoir +
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
